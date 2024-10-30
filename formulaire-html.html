@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulaires standards</title>
+    <style>
+        #comm {
+            width: 20rem;
+            height: 10rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;"> 
+        Nous lanconçons une grande enquete sur les anciens stagaires 
+    </h1>
+
+    <p style="text-align: center;">
+        <b>merci de nous répondre</b>
+    </p>
+
+    <form method="get" action="http://www.afpa.fr">
+        <p>
+            <input type="text" name="le_nom" /> Votre nom
+        </p>
+        <p>
+            <input type="text" name="le_prenom" /> Votre prénom
+        </p>
+        <p>
+            <input type="text" name="date_de_naissance" /> Votre date de date de naissance
+        </p>
+        <p>
+            <input type="text" name="adresse" /> Votre adresse
+        </p>
+        <p>
+            <input type="text" name="ville" /> Votre ville
+        </p>
+        <p>
+            <input type="text" name="code_postale" /> Votre code postale
+        </p>
+        <p>
+            <input type="text" name="e_mail" /> Votre E-mail
+        </p>
+        <input type="radio" name="gender" value="homme" /> Vous etes un homme
+        <input type="radio" name="gender" value="femme" /> Vous etes une femme
+        <br>
+        <select>
+            <option value="dev">Developpeur</option>
+            <option value="ana">Analyste</option>
+            <option value="chef">Chef de projet</option>
+            <option value="autre">Autre</option>
+        </select>
+        <p>
+            <input type="text" name="autre" /> Si vous avez répondu autre, précisez.
+        </p>
+        <select>
+            <option value="-1000"> &lt; 1000 €</option>
+            <option value="1000_1500">>1000 € et &lt; 1500 €</option>
+            <option value="1500_2000">>1500 € et &lt; 2000 € </option>
+            <option value="+2000">>2000 €</option>
+        </select>
+        <p>
+            <input type="text" name="annee_stage" /> En quelle année avez-vous suivi le stage AFPA ?
+        </p>
+        <p>
+            <textarea id="comm" placeholder="Vos commentaires"></textarea>
+        </p>
+        <p style="font-size: medium;"><b> Merci d'avoir répondu au questionnaire</b></p>
+
+        <button style="color: green;" id="submit" type="submit">valider</button>
+        <button style="color: red;" id="annuler" type="reset">Annuler</button>
+    </form>
+</body>
+
+</html>
